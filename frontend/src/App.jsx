@@ -8,6 +8,7 @@ export default function App() {
     fetch("http://localhost:8000/items")
       .then(res => res.json())
       .then(data => setItems(data));
+      console.log(items);
   }, []);
 
   return (
