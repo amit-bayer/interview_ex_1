@@ -32,5 +32,6 @@ def get_items():
 
 # TASKS:
 # 1. Add a POST endpoint to add a new item to items.txt
-# 2. Validate empty or duplicate names
-# 3. Return items as objects instead of strings
+# 2. Validate empty or duplicate names in GET /items api
+# 3. Validate empty or duplicate names in POST /items api
+# 4. (Bonus) - send first 16 terms of Fibbonacci sequence when requested for items.

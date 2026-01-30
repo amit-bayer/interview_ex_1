@@ -7,7 +7,7 @@ uvicorn app.main:app --reload
 ```
 
 ### Interview Tasks
-1. Add POST /items to append to text file
-2. Validate empty or duplicate items
-3. Return structured objects instead of strings
-4. (Bonus) Add basic in-memory caching
+1. Add a POST endpoint to add a new item to items.txt and add a new item.
+2. Validate empty or duplicate names in GET /items api before sending response.
+3. Validate empty or duplicate names in POST /items api after including newly arrived item and return updated list.
+4. (Bonus) - send first 16 terms of Fibbonacci sequence when requested for items.

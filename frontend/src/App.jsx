@@ -5,7 +5,7 @@ export default function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/items")
+    fetch("http://localhost:8005/items")
       .then(res => res.json())
       .then(data => setItems(data));
       console.log(items);
@@ -43,12 +43,10 @@ export default function App() {
       </ul>
 
       {/* TASK 4:
-          Show a loading indicator while fetching
+          Add functionality to push items to backend
+          Have a look at the downloadable items list and add functionality to push those kind of items to backend.
       */}
 
-      {/* TASK 5:
-          Handle fetch error gracefully
-      */}
     </div>
   );
 }
